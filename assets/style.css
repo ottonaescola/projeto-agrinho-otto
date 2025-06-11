@@ -167,3 +167,68 @@ header {
     cursor: pointer;
     z-index: 10;
 }
+.prev-btn {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+.next-btn {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+.carrossel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.indicator {
+    width: 12px;
+    height: 12px;
+    background: #555;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.indicator.active {
+    background: #ff0000;
+}
+#alternativas {
+    background-color: #000;
+}
+.alternativas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.alternativa-card {
+    background-color: #222;
+    border: 2px solid #00aa00;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.alternativa-icon {
+    font-size: 3rem;
+    color: #00aa00;
+    margin-bottom: 20px;
+}
+.alternativa-title {
+    font-size: 1.8rem;
+    color: #00aa00;
+    margin-bottom: 15px;
+}
+.alternativa-list {
+    text-align: left;
+    margin-top: 20px;
+}
+.alternativa-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+.alternativa-list li:before {
+    content: "✓";
+    color: #00aa00;
+    position: absolute;
+    left: 0;
+}
