@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             resetAutoAdvance();
         });
     });
-  
+
     function startAutoAdvance() {
         autoAdvance = setInterval(() => {
             goToSlide(currentIndex + 1);
@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCarrossel();
     startAutoAdvance();
 
+    // Data card animation
     const dataNumbers = document.querySelectorAll('.data-number');
     dataNumbers.forEach(number => {
         const originalText = number.innerText;
